@@ -6,7 +6,7 @@ WP docker template, should be used with jwilder/nginx-proxy
 `docker network create nginx-proxy`
 
 2. Then run nginx reverse proxy\
-`docker run -network nginx-proxy jwilder/nginx-proxy`
+`docker run --network nginx-proxy --volume /var/run/docker.sock:/tmp/docker.sock:ro -d jwilder/nginx-proxy`
 
 3. Clone this repo to a new directory\
 `git clone git@github.com:valmiste/wp-docker.git ./test-wp`
