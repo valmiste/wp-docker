@@ -2,7 +2,8 @@
 WP docker template, should be used with jwilder/nginx-proxy
 
 ## Installation
-1. First create network for nginx reverse proxy, if it does not exist already\
+_If you already have Nginx reverse proxy running like explained in 1. and 2., skip to step 3._
+1. First create network for nginx reverse proxy, if it does not exist already.\
 `docker network create nginx-proxy`
 
 2. Then run nginx reverse proxy\
